@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>em vs rem Example</title>
+  <style>
+    html {
+      font-size: 16px; /* Root font-size = 16px */
+    }
+
+    .parent {
+      font-size: 20px; /* Waalidku wuxuu leeyahay font-size 20px */
+      border: 2px solid #333;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .child-em {
+      font-size: 2em; /* 2 × font-size ee waalidka (20px) = 40px */
+      color: darkblue;
+    }
+
+    .child-rem {
+      font-size: 2rem; /* 2 × root font-size (16px) = 32px */
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Farqiga <code>em</code> iyo <code>rem</code></h2>
+
+  <div class="parent">
+    Waalid (20px)
+    <p class="child-em">Tani waa 2em → 40px</p>
+    <p class="child-rem">Tani waa 2rem → 32px</p>
+  </div>
+</body>
+</html>
